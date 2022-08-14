@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+* {                  /* "*" is used to select all the elements in the html.*/
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;   /* The box-sizing property allows us to include the padding and border in an element's total width and height.*/
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+html {
+  font-size: 62.5%;   /* Changed the default font-size which is 16px to 10px.*/
+}
+
+.main-div {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items : center;
+  background-color: #ccffff
+}
+
+.inner-div {
+  background-color: #fff;
+  width: 35vw;
+  padding : 3rem 8rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);   /* h-offset v-offset blur spread color */
+}
+
+
+.inner-div h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 1rem 0 4rem 0;
+}
+
+.inner-div li {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  list-style: none;     /* This will remove the bullets from unordered list.*/
+}
+
+input {
+  cursor: pointer;
+}
+
+#submit, .btn {
+  padding: 1rem 3rem;
+  outline : none;
+  font-size: 2rem;
+  font-size: 400;
+  display: block;     /* Displays a element in new line and take up to whole width like <p>*/
+  margin: auto;
+  border : none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #74b9ff;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+
+#submit:hover {
+  background-color: #0984e3;
+}
+
+#showScore {
+  background-color: #dfe6e9;
+  margin-top: 3rem;
+  padding : 3rem 4rem;
+  box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+  align-items: center;
+  text-align: center;
+}
+
+#showScore h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#showScore .btn {
+  margin-top: 2rem;
+  background-color: #55efc4;
+  color: #2d3436;
+  height: 4rem;
+  width: 12rem;
+  font-size: 1.3rem;
+}
+
+#showScore .btn:hover {
+  background-color: #00b894;
+  color: #fff;
+}
+
+.scoreArea {
+  display: none;
+}
